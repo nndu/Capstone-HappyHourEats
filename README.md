@@ -69,9 +69,13 @@ Notifications: Implement a notification system (email, push notifications) for s
 Endpoints:
 
 GET /happyhour: Retrieve restaurants with happy hour menus based on location.
+
 GET /promotions: Get recommendations for restaurants with ongoing promotions.
+
 GET /celebratory-specials: Display restaurants with free offerings on birthdays or anniversaries.
+
 POST /users/register: Allow users to create accounts and manage personal information.
+
 POST /notifications: Set up notifications for special occasions.
 
 Roadmap:
