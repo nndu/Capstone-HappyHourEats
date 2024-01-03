@@ -1,7 +1,8 @@
 import "./Main.scss";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import mainImg from "../../assets/mainImg.jpg";
+import logo1 from "../../assets/logo1.jpg";
+import mainImg from "../../assets/foodAndDrink.jpg";
 
 function Main() {
   return (
@@ -10,7 +11,7 @@ function Main() {
       <div className="header__container">
         <div className="header__logo-container">
           <a to="/" className="header__link">
-            <img className="header__logo" src={logo} alt="logo" />
+            <img className="header__logo" src={logo1} alt="logo" />
           </a>
         </div>
         <div className="header__navlist-container">
@@ -31,7 +32,14 @@ function Main() {
     </header>
     <div className="main">
     <div className="main__container">
-            <img className="mainImage" src={mainImg} alt="mainImg"></img>
+            <img className="mainImage" src={mainImg} alt="mainImg"/>
+            <div className="search">
+            <div className="search__holder">
+                <h1>Explore restaurants featuring a curated Happy Hour menu</h1>
+                <input className="search__input" placeholder="Search for Destination, location..." type="text"></input>
+            </div>
+            </div>
+            
         </div>
     </div>
     </>
