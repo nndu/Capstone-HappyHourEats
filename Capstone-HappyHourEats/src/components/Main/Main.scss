@@ -33,7 +33,9 @@
 
     @include desktop {
       margin-left: 0;
+      width: 60%;
     }
+    
   }
 
   &__link {
@@ -49,6 +51,14 @@
         height: 100px;
         border-radius: 50%;
     }
+  }
+  &__userlogin{
+    margin-right: 20rem;
+  }
+  &__userlogo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
   }
 
   &__navlist-container {
@@ -68,7 +78,7 @@
     text-decoration: none;
     list-style-type: none;
     color: white;
-
+    justify-content: space-between;
     @include tablet {
       justify-content: flex-end;
       gap: 7rem;
@@ -87,6 +97,12 @@
     border-radius: 1.25rem;
     color: chocolate;
     font-size: 18px;
+    &-1{
+        display: none;
+        @include desktop {
+            display:block;
+          }
+    }
     @include desktop{
         font-size: 15px;
     }
@@ -188,3 +204,4 @@
             }
         }
     }
+    
