@@ -4,6 +4,7 @@ import user from "../../assets/user.png";
 import logo1 from "../../assets/logo1.jpg";
 import mainImg from "../../assets/foodAndDrink.jpg";
 import resImg from "../../assets/mainImg.jpg";
+import SlideShow from "../SlideShow/SlideShow"
 
 function Main() {
     return (
@@ -48,7 +49,7 @@ function Main() {
 
                 </div>
             </div>
-            
+            <SlideShow/>
         </>
     );
 }
