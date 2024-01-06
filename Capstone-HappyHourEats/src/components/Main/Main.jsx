@@ -1,20 +1,20 @@
 import React from 'react';
 import "./Main.scss";
 import { Link } from "react-router-dom";
-
 import mainImg from "../../assets/foodAndDrink.jpg";
 import resImg from "../../assets/mainImg.jpg";
 import SlideShow from "../SlideShow/SlideShow";
 import Content from "../Content/Content";
-import Content2 from "../Content2/Content2";
+
 import Footer from '../Footer/Footer';
 import Login from '../Login/Login';
 import Header from '../Header/Header';
+import RestaurantDetails from '../RestaurantDetails/RestaurantDetails';
 
 function Main() {
     return (
         <>
-        <Header/>
+        
            
             <div className="main">
                 <div className="main__container">
@@ -28,11 +28,12 @@ function Main() {
 
                 </div>
             </div>
+            <RestaurantDetails/>
             <SlideShow/>
             <Content/>
-            <Content2/>
+           
             <Login/>
-            <Footer/>
+            
         </>
     );
 }

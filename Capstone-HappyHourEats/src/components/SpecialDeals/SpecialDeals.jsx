@@ -1,8 +1,8 @@
 import React from 'react';
-import "./Content2.scss";
+import "./SpecialDeals.scss";
 import resImg from "../../assets/mainImg.jpg";
 
-function Content2() {
+function SpecialDeals() {
     return (
         <>
             <section className="section-meals">
@@ -155,7 +155,7 @@ function Content2() {
     );
 }
 
-export default Content2;
+export default SpecialDeals;
 
 
 
