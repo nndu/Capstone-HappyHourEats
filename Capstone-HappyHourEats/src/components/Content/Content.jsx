@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import "./Content.scss";
 import resImg from "../../assets/mainImg.jpg";
 
@@ -41,7 +42,7 @@ function Content() {
 									<p className="shows__heading">Location</p>
 									<p className="shows__description-location">{restaurant.address}</p>
 								</div>
-								<button className="shows__button">See Happy Hours Menu</button>
+								<Link to={`/restaurants/${restaurant.id}`} className="shows__button">See Happy Hours Menu</Link>
 							</div>
 						</li>
 						)

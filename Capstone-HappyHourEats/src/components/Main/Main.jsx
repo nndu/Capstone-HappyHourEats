@@ -12,30 +12,27 @@ import Header from '../Header/Header';
 import RestaurantDetails from '../RestaurantDetails/RestaurantDetails';
 
 function Main() {
-    return (
-        <>
-        
-           
-            <div className="main">
-                <div className="main__container">
-                    <img className="mainImage" src={mainImg} alt="mainImg" />
-                    <div className="search">
-                        <div className="search__holder">
-                            <h1>Explore restaurants featuring a curated Happy Hour menu</h1>
-                            <input className="search__input" placeholder="Search for Destination, location..." type="text"></input>
-                        </div>
-                    </div>
-
-                </div>
+  return (
+    <>
+      <div className="main">
+        <div className="main__container">
+          <img className="mainImage" src={mainImg} alt="mainImg" />
+          <div className="search">
+            <div className="search__holder">
+              <h1>Explore restaurants featuring a curated Happy Hour menu</h1>
+              <input className="search__input" placeholder="Search for Destination, location..." type="text"></input>
             </div>
-            <RestaurantDetails/>
-            <SlideShow/>
-            <Content/>
-           
-            <Login/>
-            
-        </>
-    );
+          </div>
+
+        </div>
+      </div>
+      <SlideShow />
+      <Content />
+
+      <Login />
+
+    </>
+  );
 }
 
 export default Main;

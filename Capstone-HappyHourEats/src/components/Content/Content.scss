@@ -102,6 +102,9 @@
         border: none;
         border-radius: 0.5rem;
         align-self: center;
+        text-decoration: none;
+        padding-top: 18px;
+        text-align: center  ;
         cursor: inherit;
         @include desktop{
             font-size: 15px;
