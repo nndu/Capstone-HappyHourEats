@@ -21,8 +21,11 @@ app.use(cors({ origin: CORS_ORIGIN }));
 /* MAIN ROUTES */
 /***************/
 
-const warehouseRoutes = require("./routes/restaurant-routes");
-app.use("/restaurants", warehouseRoutes);
+const restaurantRoutes = require("./routes/restaurant-routes");
+app.use("/restaurants", restaurantRoutes);
+
+const eventRoutes = require("./routes/event-routes");
+app.use("/events", eventRoutes);
 
 /*****************/
 /* MAIN LISTENER */
