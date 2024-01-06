@@ -66,6 +66,7 @@
         
     }
     &__description{
+        font-family:'Nunito Bold' ;
         min-width: 10rem;
         @include desktop{
             padding-bottom: 0rem;
@@ -80,10 +81,14 @@
             height: 280px;
                 padding-bottom: 0rem;
             }
+
         }
         &-location{
-            font-family:'Nunito Bold' ;
             font-size: 25px;
+        }
+
+        &-1 {
+            font-size: 15px;
         }
     }
     &__button{
