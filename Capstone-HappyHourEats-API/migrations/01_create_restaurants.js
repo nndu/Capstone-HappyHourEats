@@ -13,6 +13,7 @@ exports.up = function (knex) {
         table.string("priceRange").notNullable();
         table.string("start").notNullable();
         table.string("end").notNullable();
+        table.string("image_url").notNullable();
     });
 };
 
