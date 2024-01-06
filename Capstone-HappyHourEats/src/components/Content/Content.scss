@@ -1,0 +1,107 @@
+@use "../../style/partials/mixins" as *;
+@use "../../style/partials/fonts" as *;
+
+.shows__section-container {
+    border-top: 2px solid rgb(210, 210, 210);
+    font-family:'Nunito light';
+    font-size: 30px;
+    @include desktop{
+    margin-left: 10%;
+    width: 70rem;
+    }
+
+    li{
+        list-style-type: none;
+    }
+}
+.shows{
+    font-family:'Nunito light';
+    font-size: 20px;
+    &__tablet{
+            display: none;
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-inline: 1rem;
+            text-transform: uppercase;
+        }
+         
+        &-item{
+            @include desktop{
+                color: #afafaf;
+                min-width: 10rem;
+                padding-top: 2rem;
+                font-weight: 600;
+            }
+        }
+    }
+    &__container{
+        border-bottom: 2px solid rgb(210, 210, 210);
+        
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0rem;
+        cursor: pointer;
+        &-buffer{
+            justify-content: space-between;
+            display: flex;
+            flex-direction: column;
+            padding-inline: 1rem;
+            @include desktop{
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+    }
+    &__heading{
+        color: silver;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 20px;
+        @include desktop{
+            display: none;
+        }
+        
+    }
+    &__description{
+        min-width: 10rem;
+        @include desktop{
+            padding-bottom: 0rem;
+        }
+        &--img{
+            object-fit: cover;
+            width: 150px;
+            height: 180px;
+            border-radius: 5%;
+            @include desktop{
+            width: 250px;
+            height: 280px;
+                padding-bottom: 0rem;
+            }
+        }
+        &-location{
+            font-family:'Nunito Bold' ;
+            font-size: 25px;
+        }
+    }
+    &__button{
+        font-family: 'Nunito Bold';
+        font-size: 18px;
+        color: white;
+        height: 3rem;
+        width: 100%;
+        text-transform: uppercase;
+        background-color: #f2731f;
+        border: none;
+        border-radius: 0.5rem;
+        align-self: center;
+        cursor: inherit;
+        @include desktop{
+            font-size: 15px;
+            max-width: 10rem;
+        }
+    }
+
+}
