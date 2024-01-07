@@ -16,6 +16,7 @@ const { PORT, CORS_ORIGIN } = process.env;
 
 app.use(express.json());
 app.use(cors({ origin: CORS_ORIGIN }));
+app.use(express.static("./public"));
 
 /***************/
 /* MAIN ROUTES */

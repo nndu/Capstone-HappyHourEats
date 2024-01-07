@@ -20,7 +20,9 @@ function Main() {
           <div className="search">
             <div className="search__holder">
               <h1>Explore restaurants featuring a curated Happy Hour menu</h1>
-              <input className="search__input" placeholder="Search for Destination, location..." type="text"></input>
+              <Link to="/explore" className='button'>
+                Explore Now
+              </Link>
             </div>
           </div>
 

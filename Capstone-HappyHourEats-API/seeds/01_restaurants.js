@@ -16,7 +16,7 @@ exports.seed = async function (knex) {
             "priceRange": "$$",
             "start": "2024-01-06T17:00:00Z",
             "end": "2024-01-06T19:00:00Z",
-            "image_url": "https://www.cactusclubcafe.com/wp-content/uploads/2018/10/Cactus_Club_Cafe_Sherway_1407_1_620x400.jpg"
+            "image_url": "http://localhost:8080/images/pacific.jpeg"
         },
         {
             "id": "2b345678-91c2-3def-8gh0-ijkl2mnopqr",
@@ -28,7 +28,7 @@ exports.seed = async function (knex) {
             "priceRange": "$$$",
             "start": "2024-01-07T18:00:00Z",
             "end": "2024-01-07T20:00:00Z",
-            "image_url": "https://www.cactusclubcafe.com/wp-content/uploads/2018/10/Cactus_Club_Cafe_Sherway_1407_1_620x400.jpg"
+            "image_url": "http://localhost:8080/images/maple.webp"
         },
         {
             "id": "3c456789-12d3-4efg-9hi0-jkl3mnopqr",
@@ -40,7 +40,7 @@ exports.seed = async function (knex) {
             "priceRange": "$$-$$$",
             "start": "2024-01-08T16:30:00Z",
             "end": "2024-01-08T18:30:00Z",
-            "image_url": "https://www.cactusclubcafe.com/wp-content/uploads/2018/10/Cactus_Club_Cafe_Sherway_1407_1_620x400.jpg"
+            "image_url": "http://localhost:8080/images/breeze-restaurant.webp"
         },
         {
             "id": "4d567890-12e3-4fgh-ij01-klmn4opqr",
@@ -52,7 +52,7 @@ exports.seed = async function (knex) {
             "priceRange": "$$$",
             "start": "2024-01-09T19:00:00Z",
             "end": "2024-01-09T21:00:00Z",
-            "image_url": "https://www.cactusclubcafe.com/wp-content/uploads/2018/10/Cactus_Club_Cafe_Sherway_1407_1_620x400.jpg"
+            "image_url": "http://localhost:8080/images/sushi.jpg"
         },
         {
             "id": "5e678901-23f4-5ghi-jkl0-mnop5pqr",
@@ -64,7 +64,7 @@ exports.seed = async function (knex) {
             "priceRange": "$$-$$$",
             "start": "2024-01-10T17:30:00Z",
             "end": "2024-01-10T19:30:00Z",
-            "image_url": "https://www.cactusclubcafe.com/wp-content/uploads/2018/10/Cactus_Club_Cafe_Sherway_1407_1_620x400.jpg"
+            "image_url": "http://localhost:8080/images/india.jpg"
         },
         {
             "id": "6f789012-34g5-6hij-klm0-nop6pqr",
@@ -76,31 +76,31 @@ exports.seed = async function (knex) {
             "priceRange": "$$",
             "start": "2024-01-11T18:30:00Z",
             "end": "2024-01-11T20:30:00Z",
-            "image_url": "https://www.cactusclubcafe.com/wp-content/uploads/2018/10/Cactus_Club_Cafe_Sherway_1407_1_620x400.jpg"
+            "image_url": "http://localhost:8080/images/Southwest.webp"
         },
         {
             "id": "7g890123-45h6-7ijk-lmno-7pqr8stuvwxy",
-            "name": "French Bistro",
-            "address": "567 Spruce St, Coquitlam, BC",
+            "name": "England Bistro",
+            "address": "567 Stride Avenue, Coquitlam, BC",
             "latitude": 49.2827,
             "longitude": -122.7922,
-            "cuisine": "French",
+            "cuisine": "English",
             "priceRange": "$$$",
             "start": "2024-01-12T17:00:00Z",
             "end": "2024-01-12T19:00:00Z",
-            "image_url": "https://www.cactusclubcafe.com/wp-content/uploads/2018/10/Cactus_Club_Cafe_Sherway_1407_1_620x400.jpg"
+            "image_url": "http://localhost:8080/food/GreekSkewers.jpg"
         },
         {
             "id": "8h901234-56i7-8jkl-mnop-9qrs0tu1vwxy",
-            "name": "Vegetarian Delight",
-            "address": "678 Fir St, Langley, BC",
+            "name": "Vegetarian Place",
+            "address": "123 9th St, Langley, BC",
             "latitude": 49.1044,
             "longitude": -122.6596,
             "cuisine": "Vegetarian",
             "priceRange": "$$-$$$",
             "start": "2024-01-13T16:30:00Z",
             "end": "2024-01-13T18:30:00Z",
-            "image_url": "https://www.cactusclubcafe.com/wp-content/uploads/2018/10/Cactus_Club_Cafe_Sherway_1407_1_620x400.jpg"
+            "image_url": "http://localhost:8080/food/mangolassi.webp"
         },
         {
             "id": "9i012345-67j8-9klm-nopq-1rs2tu3vwxy",
@@ -112,7 +112,7 @@ exports.seed = async function (knex) {
             "priceRange": "$$",
             "start": "2024-01-14T19:00:00Z",
             "end": "2024-01-14T21:00:00Z",
-            "image_url": "https://www.cactusclubcafe.com/wp-content/uploads/2018/10/Cactus_Club_Cafe_Sherway_1407_1_620x400.jpg"
+            "image_url": "http://localhost:8080/images/Ramen.webp"
         },
         {
             "id": "0j123456-78k9-lmno-pqrs-tuvw1xy2z345",
@@ -124,7 +124,66 @@ exports.seed = async function (knex) {
             "priceRange": "$$$",
             "start": "2024-01-15T17:30:00Z",
             "end": "2024-01-15T19:30:00Z",
-            "image_url": "https://www.cactusclubcafe.com/wp-content/uploads/2018/10/Cactus_Club_Cafe_Sherway_1407_1_620x400.jpg"
+            "image_url": "http://localhost:8080/images/greek.webp"
+        },  {
+            "id": "9qrs0tu1vwxy",
+            "name": "Vegetarian Delight",
+            "address": "678 Fir St, Surrey, BC",
+            "latitude": 49.1044,
+            "longitude": -122.6596,
+            "cuisine": "Vegetarian",
+            "priceRange": "$$-$$$",
+            "start": "2024-01-13T16:30:00Z",
+            "end": "2024-01-13T18:30:00Z",
+            "image_url": "http://localhost:8080/images/VegetarianDelight.jpg"
+        },
+        {
+            "id": "7pqr8stuvwxy",
+            "name": "French Bistro",
+            "address": "567 Spruce St, Burnaby, BC",
+            "latitude": 49.2827,
+            "longitude": -122.7922,
+            "cuisine": "French",
+            "priceRange": "$$$",
+            "start": "2024-01-12T17:00:00Z",
+            "end": "2024-01-12T19:00:00Z",
+            "image_url": "http://localhost:8080/images/FrenchBistro.jpeg"
+        },
+        {
+            "id": "klmn4opqr",
+            "name": "Sushi Haven",
+            "address": "101 Elm St, Vancouver, BC",
+            "latitude": 49.1875,
+            "longitude": -122.8496,
+            "cuisine": "Japanese",
+            "priceRange": "$$$",
+            "start": "2024-01-09T19:00:00Z",
+            "end": "2024-01-09T21:00:00Z",
+            "image_url": "http://localhost:8080/images/sushi.jpg"
+        },
+        {
+            "id": "nop6pqr",
+            "name": "Southwest Grill",
+            "address": "345 Birch St, Surrey, BC",
+            "latitude": 49.2068,
+            "longitude": -122.9100,
+            "cuisine": "Southwestern",
+            "priceRange": "$$",
+            "start": "2024-01-11T18:30:00Z",
+            "end": "2024-01-11T20:30:00Z",
+            "image_url": "http://localhost:8080/images/Southwest.webp"
+        },
+        {
+            "id": "1rs2tu3vwxy",
+            "name": "Ramen World",
+            "address": "789 Oak St, Vancouver, BC",
+            "latitude": 49.2838,
+            "longitude": -122.8317,
+            "cuisine": "Japanese",
+            "priceRange": "$$",
+            "start": "2024-01-14T19:00:00Z",
+            "end": "2024-01-14T21:00:00Z",
+            "image_url": "http://localhost:8080/images/Ramen.webp"
         }
     ]);
 };

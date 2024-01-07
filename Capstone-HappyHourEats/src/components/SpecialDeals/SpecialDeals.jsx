@@ -43,7 +43,7 @@ function SpecialDeals() {
                             return (
                                 <div className="meal" key={event.id}>
                                     <img
-                                        src="https://github.com/erenburuk/html-css-course/blob/1aacbb283eed0f760ab9f905e4ad5099cfa11204/07-Omnifood-Desktop/img/meals/meal-1.jpg?raw=true"
+                                        src={event.image_url}
                                         className="meal-img"
                                         alt="Japanese Gyozas"
                                     />

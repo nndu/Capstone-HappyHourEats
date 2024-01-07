@@ -4,6 +4,7 @@ import Header from "./components/Header/Header.jsx";
 import Main from "../src/components/Main/Main"
 import SpecialDeals from "./components/SpecialDeals/SpecialDeals.jsx";
 import RestaurantDetails from "./components/RestaurantDetails/RestaurantDetails.jsx";
+import Explore from "./components/Explore/Explore.jsx";
 import Login from "./components/Login/Login.jsx";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/special" element={<SpecialDeals />} />
         <Route path="/restaurants/:id" element={<RestaurantDetails />} />
+        <Route path="/explore" element={<Explore />} />
         <Route path="/user" element={<Login />} />
         </Routes>
         <Footer />

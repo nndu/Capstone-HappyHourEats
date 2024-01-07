@@ -16,7 +16,7 @@ function Header (){
                     <div className="header__navlist-container">
                         <ul className="header__navlist">
                             <li className="header__list-item">
-                                <Link to="/" className="header__navlink">Happy Hour Search
+                                <Link to="/explore" className="header__navlink">Happy Hour Search
                                 </Link>
                             </li>
                             <li className="header__list-item">

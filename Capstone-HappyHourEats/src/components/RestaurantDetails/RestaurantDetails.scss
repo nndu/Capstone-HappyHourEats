@@ -7,7 +7,7 @@
 	margin: auto;
 }
 .restaurant-menu {
-    font-family: 'Nunito light';
+  font-family: 'Nunito light';
 	$b: &;
 	background: white;
 	margin-top: 50px;
@@ -22,7 +22,12 @@
 	}
 	&__header {
 		text-align: center;
-		margin-bottom: 80px;
+		height: 100px;
+		background-image: url(../../assets/Bali.png);
+		background-size: cover;
+		object-fit: cover;
+		position: relative;
+		opacity: 80%;
 		@media (max-width: 767px) {
 			margin-bottom: between(30, 80, 575, 768);
 		}
@@ -33,17 +38,7 @@
 	&__title {
 		font-size: 30px;
 		font-family: 'Nunito Bold';
-		margin: 0;
 		display: inline-block;
-		position: relative;
-		&:after {
-			content: "";
-			position: absolute;
-			bottom: 0px;
-			width: 120%;
-			left: 50%;
-			transform: translateX(-50%);
-		}
 		@media (max-width: 575px) {
 			font-size: 25px;
 		}
@@ -73,6 +68,7 @@
     &__photo{
         width: 150px;
         height: 150px;
+				object-fit: cover;
     }
 	&__item-info {
 		flex: auto;

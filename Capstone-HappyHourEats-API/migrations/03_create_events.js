@@ -9,6 +9,7 @@ exports.up = function (knex) {
         table.string("description").notNullable();
         table.boolean("birthday").notNullable();
         table.integer("hours_left").nullable().defaultTo(null);
+        table.string("image_url").notNullable();
     });
 };
 

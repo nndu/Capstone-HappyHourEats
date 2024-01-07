@@ -35,7 +35,7 @@ function RestaurantDetails() {
 							return (
 								<div className="restaurant-menu__item" key={menu.id}>
 									<div className="restaurant-menu__item-media">
-										<img className="restaurant-menu__photo" src="https://www.pamperedchef.ca/iceberg/com/product/100915-lg.jpg" alt="" />
+										<img className="restaurant-menu__photo" src={menu.image_url} alt="" />
 									</div>
 									<div className="restaurant-menu__item-info">
 										<h4 className="restaurant-menu__item-title">
