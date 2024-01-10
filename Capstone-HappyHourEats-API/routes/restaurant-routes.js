@@ -7,4 +7,10 @@ router.route("/")
 router.route("/:id")
   .get(controller.getMenus);
 
+router.route("/:id/comments")
+  .get(controller.getComments);
+
+router.route("/:id/comments")
+  .post(controller.postComment);
+
 module.exports = router;

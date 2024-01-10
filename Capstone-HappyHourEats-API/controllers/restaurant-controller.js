@@ -27,7 +27,47 @@ const getMenus = async (req, res) => {
   }
 };
 
+// Create Comment
+const postComment = async (req, res) => {
+  const { userName, content, rating } = req.body;
+  const { id } = req.params;
+
+  try {
+    const newComment = {
+      restaurant_id: id,
+      user_name: userName,
+      rating: rating,
+      content: content
+    };
+
+    const result = await knex('comments').insert(newComment);
+
+    res.status(201).json({ comment_id: result[0] });
+  } catch (error) {
+    console.error('Error creating comment:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+};
+
+// Get Comments for a Restaurant
+const getComments = async (req, res) => {
+  const restaurant_id = req.params.id;
+
+  try {
+    const comments = await knex('comments')
+      .select('*')
+      .where('comments.restaurant_id', restaurant_id);
+
+    res.status(200).json(comments);
+  } catch (error) {
+    console.error('Error retrieving comments:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+};
+
 module.exports = {
   index,
-  getMenus
+  getMenus,
+  postComment,
+  getComments
 };
