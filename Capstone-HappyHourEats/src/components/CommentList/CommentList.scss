@@ -1,0 +1,45 @@
+// CommentsList.scss
+.comments-list {
+  max-width: 600px;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .comment {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+
+    .user-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+
+      .user-name {
+        font-weight: bold;
+      }
+
+      .rating {
+        color: #ffc107;
+      }
+
+      .time {
+        color: #777;
+      }
+    }
+
+    .comment-content {
+      white-space: pre-line;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .comments-list {
+    width: 90%;
+  }
+}

@@ -6,6 +6,9 @@ import SpecialDeals from "./components/SpecialDeals/SpecialDeals.jsx";
 import RestaurantDetails from "./components/RestaurantDetails/RestaurantDetails.jsx";
 import Explore from "./components/Explore/Explore.jsx";
 import Login from "./components/Login/Login.jsx";
+import Review from "./components/Review/Review.jsx";
+//import RestaurantInfo from "./components/RestaurantInfo/RestaurantInfo.jsx";
+
 
 function App() {
 
@@ -19,6 +22,7 @@ function App() {
         <Route path="/restaurants/:id" element={<RestaurantDetails />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/user" element={<Login />} />
+        <Route path="/review" element={<Review />} />
         </Routes>
         <Footer />
       </BrowserRouter>

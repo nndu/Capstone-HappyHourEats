@@ -3,6 +3,7 @@ import "./RestaurantDetails.scss";
 import { Link, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Review from '../Review/Review';
 
 function RestaurantDetails() {
 	const [menus, setMenus] = useState([]);
@@ -52,6 +53,7 @@ function RestaurantDetails() {
 						})
 					}
 				</div>
+				<Review restaurantId={id}/>
 			</div>
 		</div>
 

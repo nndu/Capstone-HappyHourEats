@@ -26,7 +26,7 @@ const RestaurantList = (props) => {
 									<p className="shows__heading">Location</p>
 									<p className="shows__description-location">{restaurant.address}</p>
 								</div>
-								<Link to={`/restaurants/${restaurant.id}`} className="shows__button">See Happy Hours Menu</Link>
+								<Link to={`/restaurants/${restaurant.id}`} className="shows__button">Explore restaurant</Link>
 							</div>
 						</li>
 						)

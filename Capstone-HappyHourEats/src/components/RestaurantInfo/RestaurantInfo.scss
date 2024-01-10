@@ -1,0 +1,70 @@
+// UserReview.scss
+.user-review {
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: 'Nunito light';
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .star-rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+
+    .star {
+      font-size: 24px;
+      cursor: pointer;
+      color: #ddd;
+
+      &:hover,
+      &.selected {
+        color: #ffc107;
+      }
+    }
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+  }
+
+  button {
+    margin-left: 14%;
+    margin-right: 10%;
+    height: 3rem;
+    width: 80%;
+    text-transform: uppercase;
+    background-color: #f2731f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+      background-color: #c25e1a;
+    }
+  }
+}
